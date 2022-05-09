@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Micro Plastics</title>
+        <style>
+            body{
+                padding: 0;
+                height: 100vh; 
+                background-color: #2D4EFF; 
+            }
+            .card {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+            }
+
+            .top {
+                background-color: #7BA8FF;
+                color: white;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+
+            .bar-item {
+                padding: 8px 16px;
+                float: left;
+                width: auto;
+                border: none;
+                outline: none;
+                display: block
+            }
+
+            .bar .button {
+                white-space: normal
+            }
+
+            .bar {
+                display: inline-block;
+                width: 100%;
+            }
+
+            .button {
+                border: none;
+                display: inline-block;
+                outline: 0;
+                padding: 20px 16px;
+                vertical-align: middle;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                text-align: center;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+            
+            .top a:hover {
+                background-image: linear-gradient(darkblue, lightblue);
+            }
+
+            .animate-top {
+                position: fixed;
+                top:0;
+                animation: animatetop 0.4s
+            }
+
+            .white {
+                color: white;
+                background-color: #7BA8FF;
+            }
+
+            @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+            }
+
+            .flex-container {
+                display: flex;
+                flex-wrap: nowrap;
+                
+                margin-top: 5%;
+            }
+
+            .flexChild1 {
+                word-wrap: break-word;
+                color: white;
+                width: 50%;
+                margin: 10px 20px 10px 15px;
+                text-align: left;
+                line-height: 20px;
+                font-size: 16px;
+            }
+
+            .flexChild2 {
+                margin: 10px 15px 10px 20px;
+                width: 50%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="top">
+            <div id="myNavbar">
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9%20WebDev/y9WebDevHome.html"><i class="fa fa-fw fa-home"></i>SDG #14 Home</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9%20WebDev/plasticWaste.html"><i class="fa fa-fw fa-oil-can"></i>Plastic Waste</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9%20WebDev/microPlastics.html"><i class="fa fa-fw fa-oil-can"></i>Micro Plastics</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9%20WebDev/marineEcosystems.html"><i class="fa fa-fw fa-solid fa-fish"></i>Marine Ecosystems</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9%20WebDev/cleanupOrganizationsPage.html"><i class="fa fa-fw fa-globe-americas"></i>Cleanup</a>
+            </div>
+        </nav>
+        <div class="flex-container">
+            <div class="flexChild1">dsbiuwrgbourqbgqruwiboguerbguerbgueobwguwerbguweorbgouweblgouewibgiqerbgiurebguerwbnguhwbreuhgburwbguerwbguewrbguerbguoebuge</div>
+            <div class="flexChild2"><img src="SDGInfographic.png" width="100%"></div>
+        </div>
+        <script>
+            window.onscroll = function() 
+            {
+                myFunction()
+            };
+            function myFunction() 
+            {
+                var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 85 || document.documentElement.scrollTop > 100) 
+            {
+                navbar.className = " bar" + " card" + " animate-top" + " white";
+            } 
+            else 
+            {
+                navbar.className = navbar.className.replace(" card animate-top white", "");
+            }
+            }
+        </script>
+    </body>
+</html>
